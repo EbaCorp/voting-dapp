@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+  <h1>A Simple Hello World Voting Application</h1>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Candidate</th>
+          <th>Votes</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="candidate-1-name">Rama</td>
+          <td id="candidate-1"></td>
+          <td><a href="#" onclick="voteForCandidate(1)" class="btn btn-primary">Vote</a></td>
+        </tr>
+        <tr>
+            <td id="candidate-2-name">Nick</td>
+            <td id="candidate-2"></td>
+            <td><a href="#" onclick="voteForCandidate(2)" class="btn btn-primary">Vote</a></td>
+        </tr>
+        <tr>
+            <td id="candidate-3-name">Jose</td>
+            <td id="candidate-3"></td>
+            <td><a href="#" onclick="voteForCandidate(3)" class="btn btn-primary">Vote</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- <input type="text" id="candidate" /> -->
+  
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>
